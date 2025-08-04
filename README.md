@@ -68,7 +68,7 @@ mochawesome (reportes HTML/JSON)
 Antes de correr los tests, inicia el servidor:
 
 ```bash
-node src/server.js
+npm run dev
 ```
 
 El servidor correrá en:
@@ -136,7 +136,7 @@ reports/screenshots/<nombre_del_test>.png
 Ejemplo:
 
 ```bash
-reports/screenshots/login_bloqueo_tras_3_intentos_fallidos.png
+reports/screenshots/login_bloqueo_tras_3_intentos_fallidos_CHROME.png
 ```
 
 🔹 Scripts disponibles
@@ -144,7 +144,8 @@ En package.json:
 
 ```json
 "scripts": {
-  "test": "npx mocha ./src/tests/auth.test.js --timeout 1200000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,overwrite=true,html=true,json=true"
+  "test": "npx mocha ./src/tests/auth.test.js --timeout 1200000 --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,overwrite=true,html=true,json=true",
+  "dev": "node ./src/app.js"
 }
 ```
 
