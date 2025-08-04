@@ -43,7 +43,7 @@ project/
 1. Clonar el repositorio:
 
 ```bash
-git clone <URL-del-repo>
+git clone [https://github.com/DennisATM/suite-pruebas-automatizadas.git]
 cd project 
 ```
 
